@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <Button
+            android:id="@+id/removeProduct"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fatLabel" />
+
+        <TextView
+            android:id="@+id/priceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: "
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/detailName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/detailPrice" />
+
+        <TextView
+            android:id="@+id/kcalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories: "
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/priceLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/detailKcal" />
+
+        <TextView
+            android:id="@+id/carbsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carbohydrates: "
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/kcalLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/detailCarbs" />
+
+        <TextView
+            android:id="@+id/fatLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fats: "
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/carbsLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/detailFat" />
+
+        <TextView
+            android:id="@+id/detailName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="s-budget ketchup"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/detailPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="499"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintStart_toEndOf="@id/priceLabel"
+            app:layout_constraintTop_toBottomOf="@id/detailName" />
+
+        <TextView
+            android:id="@+id/detailKcal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintTop_toBottomOf="@id/detailPrice"
+            app:layout_constraintStart_toEndOf="@id/kcalLabel" />
+
+        <TextView
+            android:id="@+id/detailCarbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintStart_toEndOf="@id/carbsLabel"
+            app:layout_constraintTop_toBottomOf="@id/detailKcal" />
+
+        <TextView
+            android:id="@+id/detailFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintStart_toEndOf="@id/fatLabel"
+            app:layout_constraintTop_toBottomOf="@id/detailCarbs" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
